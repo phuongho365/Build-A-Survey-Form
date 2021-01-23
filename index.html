@@ -1,0 +1,55 @@
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Build A Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="main"></div>
+    <div class="main-content">
+      <div class="form-content">
+        <h1 id="title">Your Next Vacation Awaits!!!</h1>
+        <p id="description">
+          Tell us more about your travel information and let this fun adventure began, leaving you with many epic lifetime memories.
+        </p>
+        <form id="survey-form">
+          <label for="name" id="name-label">Name</label>
+          <input id="name" type="text" required placeholder="Enter your full name here"/>
+          <label for="email" id="email-label">Email</label>
+          <input id="email" type="email" required placeholder="Enter your email here"/>
+          <label for="number" id="number-label">Enter the number of people going with you from 1 to 10</label>
+          <input id="number" type="number" min="1" max="10" required placeholder="Enter how many people traveling "/>
+
+          <label for="dropdown">Choose your travel destination?</label>
+          <select id="dropdown">
+            <option value="hawaii">Honolulu, Hawaii</option>
+            <option value="bora-bora">Bora Bora</option>
+            <option value="cabo">Cabo San Lucas</option>
+            <option value="alaska">Anchorage, Alaska</option>
+          </select>
+
+          <fieldset>
+            <legend>Which travel package you would like?</legend>
+            <input type="radio" name="packages" checked id="definitely"/><label for="definitely">Standard Travel Package - (2-Days Economy Travel With No Tour)</label><br/>
+            <input type="radio" name="packages" id="maybe" value="maybe"/><label for="maybe">Gold Travel Package - (5-Days Touring)</label><br/>
+            <input type="radio" name="packages" id="not-sure" value="not-sure"/><label for="not-sure">VIP Touring Package - (7-Days Private Touring With Concierge Services)</label><br/>
+          </fieldset>
+
+          <p>How did you hear from us?</p>
+          <input type="checkbox" id="media" name="media" value="media">
+          <label for="media">Social Media</label><br>
+          <input type="checkbox" id="commerical" name="commerical" value="commerical">
+          <label for="commerical">TV Commerical</label><br>
+          <input type="checkbox" id="others" name="others" value="others">
+          <label for="others">Others</label><br>
+
+          <label for="comment">If Others, please describe it here?</label>
+          <textarea rows="4" cols="50" id="comment">Enter your description here...</textarea>
+          <button type="submit" id="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
